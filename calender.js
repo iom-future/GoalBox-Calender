@@ -28,6 +28,12 @@ console.log(`day of the week that 1 of userMonth falls in: ${dayOfWeek} which is
 let thirtyDaysMonth= ["september","april","june","november"];
 let thirtyDays = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,""];
 let thirtyOneDays = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+let februaryDays = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
+  15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
+  27, 28, "", "", ""
+];
+
 
     //append empty spaces for days(monday,tuesday...) with no number(1,2,3,4)
   function getCalenderArray() {
@@ -35,7 +41,10 @@ let thirtyOneDays = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23
 
     if (thirtyDaysMonth.includes(userMonth)) {
         baseArray = [...thirtyDays]; 
-    } else {
+    }else if(userMonth==="february"){
+       baseArray = [...februaryDays]; 
+    }
+         else {
         baseArray = [...thirtyOneDays]; 
     }
 
