@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>GoalBox Calender</title>
+</head>
+<body>
+    <div class="calender flex flex-col justify-center items-center size-[360px] mx-auto">
+        <div class="w-full text-center mb-4">
+        <h2 class="month inline-block"></h2>
+        <h2 class="year inline-block"></h2>
+        </div>
+       <div class="calender-container grid grid-cols-7 grid-rows-6 w-full h-full"></div>
+    </div>
+    <script type="module" src="calender.js"></script>
+</body>
+</html>
